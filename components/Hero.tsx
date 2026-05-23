@@ -288,16 +288,16 @@ const Hero = () => {
             Into The Abyss
           </p>
 
-          <DiscordProfile />
-
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl mt-6"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-400 mt-4">
             Creative Developer & Design Enthusiast.
           </p>
+
+          <DiscordProfile />
 
           <a href="#about" className="mt-8">
             <MagicButton
