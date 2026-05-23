@@ -7,11 +7,44 @@ const MusicPlayer = () => {
   const [volume, setVolume] = useState(0.3);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Set initial volume when mounted
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = volume;
+      // Try to autoplay on load
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => { setIsPlaying(true); })
+          .catch(() => { setIsPlaying(false); });
+      }
     }
+
+    // Fallback: start on first user interaction (click or scroll) if browser blocked autoplay
+    const handleInteraction = () => {
+      if (audioRef.current && audioRef.current.paused) {
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              setIsPlaying(true);
+              window.removeEventListener("click", handleInteraction);
+              window.removeEventListener("scroll", handleInteraction);
+              window.removeEventListener("keydown", handleInteraction);
+            })
+            .catch(() => {});
+        }
+      }
+    };
+
+    window.addEventListener("click", handleInteraction);
+    window.addEventListener("scroll", handleInteraction);
+    window.addEventListener("keydown", handleInteraction);
+
+    return () => {
+      window.removeEventListener("click", handleInteraction);
+      window.removeEventListener("scroll", handleInteraction);
+      window.removeEventListener("keydown", handleInteraction);
+    };
   }, []);
 
   const togglePlay = () => {
