@@ -171,18 +171,23 @@ const StatusIcon = ({ status, className = "w-4 h-4" }: { status: string, classNa
                   Joue à
                 </p>
                 <div className="flex gap-4 items-center">
-                  <div className="relative w-16 h-16 shrink-0">
+                  <div className="relative w-16 h-16 shrink-0 bg-[#000319] rounded-xl flex items-center justify-center overflow-hidden border border-white/10">
+                    <span className="text-2xl absolute">🎮</span>
                     {largeImage ? (
                       <img
                         src={getImageUrl(largeImage, activity.application_id) || ""}
-                        className="w-full h-full rounded-xl object-cover"
+                        className="w-full h-full object-cover relative z-10"
                         alt="Activity Large"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
                       />
-                    ) : (
-                      <div className="w-full h-full rounded-xl bg-gray-800 flex items-center justify-center">
-                        🎮
-                      </div>
-                    )}
+                    ) : activity.application_id ? (
+                      <img
+                        src={`https://dcdn.dstn.to/app-icons/${activity.application_id}`}
+                        className="w-full h-full object-cover relative z-10"
+                        alt="Activity Icon"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                      />
+                    ) : null}
                     {smallImage && (
                       <img
                         src={getImageUrl(smallImage, activity.application_id) || ""}

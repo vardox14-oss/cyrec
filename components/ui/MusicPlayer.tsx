@@ -37,14 +37,14 @@ const MusicPlayer = () => {
     <div className="fixed top-6 right-6 z-[100] flex items-center bg-[#050505]/70 backdrop-blur-md border border-white/10 rounded-2xl p-3 shadow-2xl gap-4 hover:bg-[#050505]/90 transition-all duration-300">
       <audio 
         ref={audioRef} 
-        src="/Saïf, Booska-P - Booska-Pluie de balles (SPOTISAVER).mp3" 
+        src="/music.mp3" 
         loop
       />
       
       {/* Cover */}
       <div className="relative w-12 h-12 shrink-0 rounded-lg overflow-hidden border border-white/20">
         <img 
-          src="/Booska-Pluie de balles cover.jpg" 
+          src="/cover.jpg" 
           alt="Cover" 
           className="w-full h-full object-cover"
         />
