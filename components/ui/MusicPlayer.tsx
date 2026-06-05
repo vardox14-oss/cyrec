@@ -97,11 +97,11 @@ const MusicPlayer = () => {
 
         {/* Info */}
         <div className="flex flex-col w-[120px] sm:w-[150px] overflow-hidden">
-          <p className="text-sm font-bold text-white truncate" title="Booska-Pluie de balles">
-            Booska-Pluie de balles
+          <p className="text-sm font-bold text-white truncate" title="N'Brik N'Brik">
+            N'Brik N'Brik
           </p>
-          <p className="text-xs text-gray-400 truncate" title="Saïf, Booska-P">
-            Saïf, Booska-P
+          <p className="text-xs text-gray-400 truncate" title="N'Brik N'Brik">
+            N'Brik N'Brik
           </p>
         </div>
 

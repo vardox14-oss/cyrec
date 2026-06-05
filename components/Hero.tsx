@@ -46,7 +46,7 @@ const SpotifyProgress = ({ start, end }: { start: number; end: number }) => {
 
 const DiscordProfile = () => {
   const { data, error } = useSWR(
-    "https://api.lanyard.rest/v1/users/1373318082461962333",
+    "https://api.lanyard.rest/v1/users/1482797619230015518",
     fetcher,
     { refreshInterval: 1000 }
   );
@@ -128,16 +128,16 @@ const StatusIcon = ({ status, className = "w-4 h-4" }: { status: string, classNa
 
           <div className="flex flex-col text-left">
             <a 
-              href="https://discord.com/users/1373318082461962333" 
+              href="https://discord.com/users/1482797619230015518" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity cursor-pointer block"
             >
               <h2 className="text-2xl font-bold text-white tracking-wide hover:underline">
-                {discordUser ? discordUser.global_name || discordUser.username : "vardox58"}
+                {discordUser ? discordUser.global_name || discordUser.username : "ketamine.sys"}
               </h2>
               <p className="text-gray-400 font-mono text-sm mt-1">
-                @{discordUser ? discordUser.username : "vardox58"}
+                @{discordUser ? discordUser.username : "ketamine.sys"}
               </p>
             </a>
             <div className="flex items-center gap-2 mt-2">
@@ -289,8 +289,8 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-gray-400 max-w-80">
-            Into The Abyss
+          <p className="uppercase tracking-widest text-sm md:text-base text-center text-gray-400 max-w-80">
+            Cyrec feat vibox
           </p>
 
           <DiscordProfile />

@@ -181,7 +181,12 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie
+                  options={defaultOptions}
+                  height={200}
+                  width={400}
+                  eventListeners={[]}
+                />
               </div>
 
               <MagicButton

@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/darkgpt.png",
+    img: "/sozari.png",
     spareImg: "",
   },
   {
@@ -72,11 +72,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "DarkGPT",
-    des: "A 100% uncensored AI featuring an OSINT mode with over 2 billion indexed records.",
-    img: "/darkgpt.png",
+    title: "Sozari",
+    des: "E-commerce platform like ARP for Valorant cheats and spoofer services.",
+    img: "/sozari.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://darkgpt.chat",
+    link: "https://sozari.wtf",
   },
   {
     id: 2,
@@ -91,31 +91,32 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with DarkGPT was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. DarkGPT's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, DarkGPT is the ideal partner.",
+      "Collaborating with Sozari was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Sozari's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Sozari is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+
+  {
+    quote:
+      "Collaborating with Sozari was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Sozari's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Sozari is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with DarkGPT was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. DarkGPT's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, DarkGPT is the ideal partner.",
+      "Collaborating with Sozari was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Sozari's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Sozari is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with DarkGPT was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. DarkGPT's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, DarkGPT is the ideal partner.",
+      "Collaborating with Sozari was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Sozari's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Sozari is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with DarkGPT was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. DarkGPT's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, DarkGPT is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with DarkGPT was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. DarkGPT's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, DarkGPT is the ideal partner.",
+      "Collaborating with Sozari was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Sozari's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Sozari is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -188,14 +189,12 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    name: "globe",
+    href: "https://sozari.wtf",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
+    name: "discord",
+    href: "https://discord.gg/sozari",
   },
 ];

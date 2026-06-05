@@ -8,7 +8,7 @@ import MusicPlayer from "@/components/ui/MusicPlayer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "vardox58's Portfolio",
+  title: "Cyrec feat vibox Portfolio",
   description: "Modern & Minimal JS Mastery Portfolio",
 };
 
